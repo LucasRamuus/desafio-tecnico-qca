@@ -2,12 +2,12 @@ from pydantic import BaseModel, Field
 from typing import List
 from datetime import date
 
-
+#aaa
 class Item(BaseModel):
     """
     Representa um item da fatura.
     Contém o nome do produto, a quantidade comprada
-    e o preço unitário.
+    e o preço unitário. 
     """
     product: str
     quantity: int = Field(gt=0, description="Quantidade do produto (maior que zero)")
